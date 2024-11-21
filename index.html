@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping list</title>
+  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css ">
+    <style>
+        .red {
+            color: #850000;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid bg-black ">
+        <a class="navbar-brand text-white" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white" href="#">Features</a>
+                <a class="nav-link text-white" href="#">Pricing</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <form class="input-user d-flex justify-content-center align-items-center flex-column" id="item_form">
+        <div class="input-group mb-3 w-50">
+            <span class="input-group-text bg-black text-white" id="inputGroup-sizing-default ">Product</span>
+            <input type="text"  class="form-control" name="item-name" placeholder="Enter product name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <button type="button" class="btn btn-primary bg-black px-5 py-2" onclick="addListItem(event)">submit</button>
+    </form>
+
+
+
+    <ul class="w-50 list-group m-auto mt-3">
+<!--        <li class="list-group-item d-flex justify-content-between align-items-center">-->
+<!--            ITEM-->
+<!--            <i class="bi bi-x-diamond-fill"></i>-->
+<!--        </li>-->
+    </ul>
+
+
+
+
+
+
+
+
+
+
+<script src="./script.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
